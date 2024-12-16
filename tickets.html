@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets - AirKnights</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__nav-container">
+            <ul class="header__nav-bar" type="none">
+                <li class="header__nav-item"><a href="index.html" class="header__nav-link">About us</a></li>
+                <li class="header__nav-item"><a href="exhibits.html" class="header__nav-link">Exhibits</a></li>
+                <li class="header__nav-item"><a href="didyouknow.html" class="header__nav-link">Did you know?</a></li>
+                <li class="header__nav-item active"><a href="tickets.html" class="header__nav-link">Tickets</a></li>
+            </ul>
+        </div>
+        <section class="hero">
+            <div class="hero__container">
+                <h1>AirKnights</h1>
+            </div>
+        </section>
+    </header>
+    <section class="main">
+        <h2 class="main__title">Plan Your Visit</h2>
+        <div class="main__tickets">
+            <div class="tickets__info">
+                <h3>Opening Hours</h3>
+                <ul>
+                    <li>Monday - Friday: 9:00 AM - 5:00 PM</li>
+                    <li>Saturday: 10:00 AM - 6:00 PM</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+                <h3>Ticket Prices</h3>
+                <ul>
+                    <li>Adults: $15</li>
+                    <li>Children (6-12): $10</li>
+                    <li>Children under 6: Free</li>
+                    <li>Seniors (65+): $12</li>
+                </ul>
+            </div>
+            <div class="tickets__form">
+                <h3>Order Your Tickets</h3>
+                <form action="#" method="post">
+                    <label for="visitor-name">Your Name:</label>
+                    <input type="text" id="visitor-name" name="visitor-name" placeholder="Enter your name" required>
+                    
+                    <label for="ticket-type">Select Ticket Type:</label>
+                    <select id="ticket-type" name="ticket-type" required>
+                        <option value="adult">Adult - $15</option>
+                        <option value="child">Child (6-12) - $10</option>
+                        <option value="senior">Senior (65+) - $5</option>
+                    </select>
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+
+                    <label for="visit-date">Select Visit Date:</label>
+                    <input type="date" id="visit-date" name="visit-date" required>
+
+                    <button type="submit" class="button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section footer-about">
+                <h4>About AirKnights</h4>
+                <p>Located in Chicago, the AirKnights Museum is dedicated to preserving the history of fighter aviation and honoring the heroes of the skies.</p>
+            </div>
+            <div class="footer-section footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@airknightsmuseum.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Aviation Road, Chicago, IL</p>
+            </div>
+            <div class="footer-section footer-social">
+                <h4>Follow Us</h4>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AirKnights Museum. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
