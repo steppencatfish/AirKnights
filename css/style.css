@@ -13,39 +13,40 @@
 }
 
 @font-face {
-font-family: "Montserrat";
-src: url("fonts/Montserrat-Black.woff2") format("woff2"), url("../Montserrat-Black.woff") format("woff");
-font-weight: 900;
-font-display: swap;
-font-style: normal;
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat-Black.woff2") format("woff2"), url("../Montserrat-Black.woff") format("woff");
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
 }
 
 @font-face {
-font-family: "Montserrat";
-src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../Montserrat-ExtraBold.woff") format("woff");
-font-weight: 800;
-font-display: swap;
-font-style: normal;
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../Montserrat-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-display:   wap;
+    font-style: normal;
 }
 
 @font-face {
-font-family: "Montserrat";
-src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../Montserrat-Regular.woff") format("woff");
-font-weight: 400;
-font-display: swap;
-font-style: normal;
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../Montserrat-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
 }
 
 @font-face {
-font-family: "Montserrat";
-src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../Montserrat-SemiBold.woff") format("woff");
-font-weight: 600;
-font-display: swap;
-font-style: normal;
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../Montserrat-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
 }
 
 * {
     max-width: 100%;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -129,7 +130,7 @@ body {
 }
 
 .header__nav-item:not(:last-child) {
-    margin-right: 85px;
+    margin-right: 5%;
 }
 
 .header__nav-item {
@@ -142,6 +143,7 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     position: relative;
+    z-index: 2;
 }
 
 .header__nav-link {
@@ -156,6 +158,7 @@ body {
     justify-content: center;
     z-index: 1;
     transition: background-color 0.3s ease;
+    overflow-y: hidden;
 }
 
 .header__nav-item:hover {
@@ -214,7 +217,7 @@ body {
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 20px;
-        padding-top: 50px;
+    padding-top: 50px;
     color: #333;
 }
 
@@ -223,7 +226,6 @@ body {
     font-size: 24px;
     line-height: 1.6;
     color: #333;
-    margin-bottom: 30px;
     text-align: left;
 }
 
@@ -240,15 +242,15 @@ body {
     justify-items: center;
     width: 70%;
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
+    gap: 40px;
     align-items: center;
-    padding-left: 14%;
+    padding-left: 15%;
 }
 
 .main__guideimage {
-    width: 90%;
+    width: 100%;
     max-width: 300px;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -298,27 +300,6 @@ body {
     color: #aaa;
 }
 
-/* Адаптивные стили */
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-
-
-@media (max-width: 768px) {
-    .main {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .main__content, .main__image-container {
-        flex: 1 1 100%;
-    }
-}
-
 
 
 /* !!!EXHIBITS!!! */
@@ -362,17 +343,6 @@ body {
     color: #666;
     text-align: left;
     padding-bottom: 15px;
-}
-
-@media (max-width: 768px) {
-    .exhibit {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .exhibit__image {
-        margin: 0 auto;
-    }
 }
 
 
@@ -431,17 +401,6 @@ body {
     line-height: 1.6;
     color: #666;
     padding-bottom: 20px;
-}
-
-@media (max-width: 768px) {
-    .fact {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .fact__image {
-        margin: 0 auto;
-    }
 }
 
 
@@ -504,8 +463,188 @@ body {
     background-color: #555;
 }
 
+@media (max-width: 1024px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .header__nav-bar {
+        font-size: 14px;
+    }
+
+    .main__title {
+        font-size: 28px;
+    }
+
+    .main__description{
+        font-size: 18px;
+    }
+    .footer-section h4 {
+        font-size: 14px;
+    }
+
+    .footer-section p, .footer-section a {
+        line-height: 1.6;
+    }
+
+    .footer-bottom {
+        font-size: 10px;
+    }
+
+    .exhibit__description h3 {
+    font-size: 24px;
+
+    }
+
+    .exhibit__description p {
+            font-size: 16px;
+    }
+
+    .fact__text h3 {
+        font-size: 30px;
+    }
+
+    .fact__text p {
+        font-size: 18px;
+    }
+
+    .tickets__info h3, .tickets__form h3 {
+        font-size: 22px;
+    }
+    
+
+    .tickets__info ul, .tickets__form form {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 768px) {
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .header__nav-bar {
+        font-size: 12px;
+    }
+
+    .main__title {
+        font-size: 24px;
+    }
+
+    .main__description{
+        font-size: 14px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main__content, .main__image-container {
+        flex: 1 1 100%;
+    }
+
+    .main__row {
+        grid-template-columns: 1fr;
+    }
+
+    .exhibit {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .exhibit__image {
+        margin: 0 auto;
+    }
+    .fact {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .fact.reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .fact__image {
+        margin: 0 auto;
+    }
     .main__tickets {
         grid-template-columns: 1fr;
+    }
+
+    .exhibit__description h3 {
+        font-size: 22px;
+
+    }
+
+    .exhibit__description p {
+            font-size: 14px;
+    }
+
+    .fact__text h3 {
+        font-size: 26px;
+    }
+
+    .fact__text p {
+        font-size: 16px;
+    }
+
+    .tickets__info h3, .tickets__form h3 {
+        font-size: 20px;
+    }
+    
+
+    .tickets__info ul, .tickets__form form {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 690px) {
+    .header__nav-bar {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 620px) {
+
+    .header__nav-bar {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .header__nav-bar {
+        font-size: 10px;
+    }
+
+    .main__title {
+        font-size: 24px;
+    }
+
+    .main__description{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 350px) {
+    .header__nav-bar {
+        font-size: 6px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .main__content {
+    width: 75%;
     }
 }
