@@ -408,6 +408,13 @@ body {
 /* !!!TICKETS!!! */
 	
 
+.main__titleplan {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    padding-top: 50px;
+    color: #333;
+}
 
 .main__tickets {
     display: grid;
