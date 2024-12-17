@@ -406,23 +406,8 @@ body {
 
 
 /* !!!TICKETS!!! */
-
-
-
-.main__plan {
-	    display: grid;
-    gap: 40px;
-    place-items: center;
-    min-height: 100vh;
-    text-align: center;
-	width: 80vw;
-	margin-left: 10%;
-    padding-bottom: 10px;
-	background-color: white;
-	box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5), -5px 0px 10px rgba(0, 0, 0, 0.5);
-	background-color: rgba(255, 228, 196, 1.0);
-}
 	
+
 
 .main__tickets {
     display: grid;
